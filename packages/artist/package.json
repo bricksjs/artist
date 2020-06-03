@@ -1,0 +1,48 @@
+{
+  "name": "@bricks/artist",
+  "version": "1.0.0",
+  "description": "一个微前端框架",
+  "author": "小苏格拉迪",
+  "homepage": "https://github.com/bricksjs/artist#readme",
+  "license": "ISC",
+  "main": "lib/index.js",
+  "directories": {
+    "lib": "lib"
+  },
+  "files": [
+    "lib"
+  ],
+  "publishConfig": {
+    "registry": "https://www.npmjs.com/"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/bricksjs/artist.git"
+  },
+  "scripts": {
+    "build:babel": "babel ./src --out-dir=lib --extensions=.ts",
+    "build:tsc": "tsc",
+    "watch:ts": "tsc --watch",
+    "test": "echo \"Error: run tests from root\" && exit 1"
+  },
+  "bugs": {
+    "url": "https://github.com/bricksjs/artist/issues"
+  },
+  "dependencies": {
+    "@babel/runtime": "^7.9.6",
+    "@babel/runtime-corejs3": "^7.9.6"
+  },
+  "devDependencies": {
+    "@babel/cli": "^7.10.0",
+    "@babel/core": "^7.10.0",
+    "@babel/plugin-transform-runtime": "^7.9.6",
+    "@babel/preset-env": "^7.9.6",
+    "@babel/preset-typescript": "^7.9.0",
+    "@typescript-eslint/eslint-plugin": "^2.34.0",
+    "@typescript-eslint/parser": "^2.34.0",
+    "eslint": "^6.8.0",
+    "eslint-config-airbnb-base": "^14.1.0",
+    "eslint-plugin-import": "^2.20.2",
+    "typescript": "^3.9.3"
+  }
+}

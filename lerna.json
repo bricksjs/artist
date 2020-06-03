@@ -1,0 +1,12 @@
+{
+  "packages": [
+    "packages/*"
+  ],
+  "version": "independent",
+  "npmClient": "npm",
+  "command": {
+    "publish": {
+      "registry": "http://nexus3.hundsun.com:6060/repository/rd_center/"
+    }
+  }
+}
