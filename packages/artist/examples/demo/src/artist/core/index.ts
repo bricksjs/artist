@@ -1,4 +1,4 @@
-import { Core } from '../interfaces';
+import { Core, Application } from '../interfaces';
 
 export class Artist implements Core {
   name = ''
@@ -6,15 +6,26 @@ export class Artist implements Core {
   // 状态
   status = ''
 
-  private apps = []
+  private apps: Application[] = []
 
   private loaded = []
 
   private failed = []
 
-  load(apps: []): void {
-    this.apps = apps;
+  private config = {}
+
+  load(apps: Application[]): void {
+    this.apps.concat(apps);
+  }
+
+  start() {
+    this.status = 'running';
+    return true;
+  }
+
+  get() {
+    return this.apps;
   }
 }
 
-// export default Artist;
+export default Artist;

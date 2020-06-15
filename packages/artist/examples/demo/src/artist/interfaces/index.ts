@@ -22,7 +22,7 @@ export interface Application {
   type: string;
   name: string;
   status?: string;
-  entry: object;
+  entry: string;
   config: object;
 
   beforeLoad?(): void;
@@ -41,5 +41,10 @@ export interface Application {
   destroyed?(): void;
 }
 
+declare global {
+  interface Window {
+    artist: Core;
+  }
+}
 
 export type VM = Window
