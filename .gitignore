@@ -1,8 +1,8 @@
 /**/.DS_Store
 /**/node_modules
 /**/dist
-/**/test
-/**/demo
+# /**/test
+# /**/demo
 
 npm-debug.log*
 yarn-debug.log*

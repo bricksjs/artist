@@ -27,5 +27,6 @@ module.exports = {
       "import/no-unresolved":"off",
       "prefer-const": "off",
       "no-case-declarations": "off",
+      // "lines-between-class-members": "off"
     }
 };

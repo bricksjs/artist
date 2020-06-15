@@ -1,7 +1,6 @@
-
 import { Core } from '../interfaces';
 
-class Artist implements Core {
+export class Artist implements Core {
   name = ''
 
   // 状态
@@ -18,4 +17,4 @@ class Artist implements Core {
   }
 }
 
-export default Artist;
+// export default Artist;
