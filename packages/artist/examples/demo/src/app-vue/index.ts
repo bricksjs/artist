@@ -9,10 +9,10 @@ new Vue({
   router,
   store,
   render: (h) => h(App),
-}).$mount('#app');
+}).$mount('#app-1');
 
-new Vue({
-  router,
-  store,
-  render: (h) => h(App),
-}).$mount('#app3');
+// new Vue({
+//   router,
+//   store,
+//   render: (h) => h(App),
+// }).$mount('#app-3-1');
