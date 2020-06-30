@@ -5,7 +5,7 @@
       <router-link to="/about">About</router-link>
     </div>
     <div>
-      sss
+      common
     </div>
     <div>
 
