@@ -1,3 +1,3 @@
-import './app/index';
-import './react-app/index';
+import './app-vue/index';
+import './app-react/index';
 // import './artist/start';
