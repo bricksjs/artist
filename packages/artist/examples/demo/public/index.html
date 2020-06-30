@@ -5,9 +5,9 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width,initial-scale=1.0">
     <link rel="icon" href="<%= BASE_URL %>favicon.ico">
-    <link rel="stylesheet" href="my.css">
+    <link rel="stylesheet" type="text/css" href="my.css">
     <title><%= htmlWebpackPlugin.options.title %></title>
-    <style>
+    <style type="text/css">
       .test {
         color: black;
       }
@@ -18,10 +18,53 @@
     </script>
   </head>
   <body>
+    <style type="text/css">
+      .test1 {
+        color: black;
+      }
+    </style>
     <noscript>
       <strong>We're sorry but <%= htmlWebpackPlugin.options.title %> doesn't work properly without JavaScript enabled. Please enable it to continue.</strong>
     </noscript>
     <div id="app"></div>
+    <div id="app2"></div>
+    <div>
+      <!DOCTYPE html>
+      <html lang="en">
+        <head>
+          <meta charset="utf-8">
+          <meta http-equiv="X-UA-Compatible" content="IE=edge">
+          <meta name="viewport" content="width=device-width,initial-scale=1.0">
+          <link rel="icon" href="/favicon.ico">
+          <link rel="stylesheet" type="text/css" href="my.css">
+          <title>demo</title>
+          <style type="text/css">
+            .test {
+              color: black;
+            }
+          </style>
+          <script>
+            let test2 = 1;
+            console.log('script-test',test)
+          </script>
+        <body>
+          <style type="text/css">
+            .test1 {
+              color: red;
+            }
+          </style>
+          <noscript>
+          </noscript>
+          <div id="app3"></div>
+          <div class="app-3">
+            新加入的html内容
+          </div>
+          <div id="react-app">
+
+          </div>
+          <!-- built files will be auto injected -->
+      </html>
+    </div>
     <!-- built files will be auto injected -->
   </body>
 </html>
