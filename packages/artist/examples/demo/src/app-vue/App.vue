@@ -6,6 +6,12 @@
     </div>
     <div>
       common
+      <button @click="go">go -1</button>
+      <button @click="pushState('/about')">pushState /about</button>
+      <button @click="pushState('/')">pushState /home</button>
+      <button @click="replaceState('/about')">replaceState /about</button>
+      <button @click="replaceState('/')">replaceState /home</button>
+       <button @click="popState">popState </button>
     </div>
     <div>
 
@@ -13,6 +19,28 @@
     <router-view/>
   </div>
 </template>
+<script>
+/* eslint-disable */
+export default {
+  methods: {
+    go() {
+      history.go(-1);
+    },
+    pushState(path) {
+      history.pushState('', document.title, path);
+    },
+    replaceState(path){
+      history.replaceState('', document.title, path);
+    },
+    popState(){
+      history.popState()
+    }
+  },
+};
+window.addEventListener('popstate',function(){
+  console.log('change,----')
+})
+</script>
 
 <style>
 #app {
