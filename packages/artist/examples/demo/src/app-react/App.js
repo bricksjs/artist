@@ -11,12 +11,27 @@ const Home = () => (
     </div>
 );
 
-const About = () => (
-  <div>
-    About
-  </div>
-);
-const RouteExample = () => (
+const About = () => {
+  const a = 1;
+  console.log('a', a);
+  return (
+    <div>
+      <div>
+        About
+      </div>
+      <div>
+
+      </div>
+    </div>
+  );
+};
+const RouteExample = () => {
+  // 页面路由点击跳转
+  const onPageChange = () => {
+    console.log('page change');
+    return 'a';
+  };
+  return (
     <Router basename={ '/'}>
       <nav>
         <Link to="/">Home</Link> |
@@ -29,7 +44,8 @@ const RouteExample = () => (
         </Switch>
       </Suspense>
     </Router>
-);
+  );
+};
 
 export default function App() {
   return (

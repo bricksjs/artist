@@ -9,5 +9,12 @@ ReactDOM.render(
   // <React.StrictMode>
     <App />,
     // </React.StrictMode>,
-    document.getElementById('app-2'),
+    document.getElementById('app-3-1'),
+);
+
+ReactDOM.render(
+  // <React.StrictMode>
+    <App />,
+    // </React.StrictMode>,
+    document.getElementById('app-3-2'),
 );
